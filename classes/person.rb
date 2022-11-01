@@ -7,3 +7,12 @@ class Person
     @age = age
     @parent_permission = parent_permission
   end
+
+  def can_use_services?
+    if of_age? || @parent_permission
+      true
+    else
+      false
+    end
+  end
+  
