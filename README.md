@@ -2,7 +2,7 @@
 
 # Project Name
 
-*_OOP-SCHOOL-LIBRARY_*
+** __OOP-SCHOOL-LIBRARY__**
 
 # Description the project.
 
@@ -34,7 +34,7 @@ Imagine that you are the librarian of OOP University, and you need a tool to rec
 
 ## Authors
 
-👤👤 **Ahmad Zaki Yousufi**
+👤 **Ahmad Zaki Yousufi**
 
 - GitHub: [@zakiyousufi](https://github.com/zakiyousufi).
 - LinkedIn: [zakiyousufi](https://www.linkedin.com/in/zakiyousufi/)
