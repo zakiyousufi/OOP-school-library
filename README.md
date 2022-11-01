@@ -2,7 +2,7 @@
 
 # Project Name
 
-** __OOP-SCHOOL-LIBRARY__**
+* __OOP-SCHOOL-LIBRARY__ **
 
 # Description the project.
 
