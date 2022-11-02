@@ -10,3 +10,7 @@ class BaseDecorator < nameable
     @correct_name.correct_name
   end
 end
+
+class CapitalizeDecorator < BaseDecorator
+
+end
