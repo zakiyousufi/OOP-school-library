@@ -5,6 +5,7 @@ class Person < Nameable
   attr_reader :corrector
 
   def initialize(name, age, parent_permission = { parent_permission: true })
+    super()
     @id = rand(1000)
     @name = name
     @age = age
