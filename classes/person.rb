@@ -1,16 +1,13 @@
-require_relative 'Nameable'
-
+require './nameable'
 class Person < Nameable
-  attr_accessor :name, :age, :parent_permission, :rentals, :id
-  attr_reader :corrector
+  attr_reader :id, :name, :age
 
-  def initialize(name, age, parent_permission = { parent_permission: true })
-    super()
-    @id = rand(1000)
+  def initialize(age, name = 'Unknown', parent_permission: true)
+    @id = Random.rand(0..1000)
     @name = name
     @age = age
     @parent_permission = parent_permission
-    @corrector = Corrector.new
+    super()
   end
 
   def of_age?
@@ -18,11 +15,11 @@ class Person < Nameable
   end
 
   def can_use_services?
-    of_age && parent_permission[:parent_permission]
+    of_age? || parent_permission
   end
 
-  def validate_name
-    @name = @corrector.correct_name
+  def correct_name
+    @name
   end
 
   private :of_age?
