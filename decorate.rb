@@ -5,4 +5,8 @@ class BaseDecorator < nameable
     super()
     @nameable = nameable
   end
+
+  def correct_name
+    @correct_name.correct_name
+  end
 end
