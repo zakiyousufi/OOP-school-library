@@ -69,5 +69,18 @@ class App
     @students << student unless @students.include?(student)
     puts 'Student created successfully!'
   end
+# ========= create teacher ==========
+  def create_teacher
+    print 'Age: '
+    age = gets.chomp.to_i
+    print 'Name: '
+    name = gets.chomp
+    print 'Specialization: '
+    specialization = gets.chomp
+    teacher = Teacher.new(age, specialization, name)
+    @people << teacher unless @people.include?(teacher)
+    @teachers << teacher unless @teachers.include?(teacher)
+    puts 'Teacher created successfully!'
+  end
 end
   
