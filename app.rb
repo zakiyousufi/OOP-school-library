@@ -5,7 +5,6 @@ require './classes/student'
 require './classes/teacher'
 require './classes/classroom'
 
-
 class App
   attr_accessor :books_list, :people
 
