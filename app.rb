@@ -92,5 +92,21 @@ class App
     puts "The book \'#{title}\' by #{author} was created successfully!"
     @books_list << book unless @books_list.include?(book)
   end
+
+  # ======== create rentals ========
+  def create_rental
+    puts "Select a book from the following list by number:\n"
+    list_all_books
+    book_index = gets.chomp.to_i
+    puts "Select a person from the following list by number:\n"
+    list_all_people
+    person_index = gets.chomp.to_i
+    puts 'Enter a date: e.g 2022/09/28'
+    date = gets.chomp
+    rental = Rental.new(date, books_list[book_index], people[person_index])
+    puts 'Rental successfully created!'
+    @rentals << rental unless @rentals.include?(rental)
+  end
+
 end
   
