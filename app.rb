@@ -82,5 +82,15 @@ class App
     @teachers << teacher unless @teachers.include?(teacher)
     puts 'Teacher created successfully!'
   end
+  # ========= create books ========
+  def create_book
+    print 'Title: '
+    title = gets.chomp
+    print 'Author: '
+    author = gets.chomp
+    book = Book.new(title, author)
+    puts "The book \'#{title}\' by #{author} was created successfully!"
+    @books_list << book unless @books_list.include?(book)
+  end
 end
   
