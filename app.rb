@@ -125,5 +125,13 @@ class App
     end
   end
 
+  # =========== show all the teachers ===========
+  def list_all_teachers
+    if @teachers.empty?
+      puts 'There are no teachers in the library'
+    else
+      @teachers.each { |teacher| puts "Name: #{teacher.name}, ID: #{teacher.id}, Age: #{teacher.age}" }
+    end
+  end
 end
   
