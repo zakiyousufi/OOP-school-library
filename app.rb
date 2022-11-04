@@ -107,6 +107,14 @@ class App
     puts 'Rental successfully created!'
     @rentals << rental unless @rentals.include?(rental)
   end
+# ========= check the name and date of rentals ========
+  def list_all_rentals
+    print 'ID of person:'
+    person_id = gets.chomp.to_i
+    rentals = @rentals.filter { |rental| rental.person.id == person_id }
+    puts 'Rentals:'
+    rentals.each { |rental| puts "Date: #{rental.date}, Book: '#{rental.book.title}' by #{rental.book.author}" }
+  end
 
 end
   
