@@ -5,6 +5,7 @@ require './classes/student'
 require './classes/teacher'
 require './classes/classroom'
 
+
 class App
   attr_accessor :books_list, :people
 
@@ -15,12 +16,12 @@ class App
     @students = []
     @teachers = []
   end
-  
+
   def run
     display_list
   end
-    
-# ======= show list all the books =======
+
+  # ======= show list all the books =======
   def list_all_books
     if @books_list.empty?
       puts 'There are no books in the library'
@@ -28,18 +29,19 @@ class App
       @books_list.each_with_index { |book, i| puts "#{i}) Title: '#{book.title}', Author: #{book.author}" }
     end
   end
-# ======= show list all the peoples =======
+
+  # ======= show list all the peoples =======
   def list_all_people
     if @people.empty?
       puts 'There are no people in the library'
     else
       @people.each_with_index do |person, i|
-      puts "#{i}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+        puts "#{i}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
       end
     end
   end
-        
-# ======== Create person =======
+
+  # ======== Create person =======
   def create_person
     puts 'Do you want to create a student (1) or a teacher (2)? [Input the number]:'
     person_type = gets.chomp
@@ -69,7 +71,8 @@ class App
     @students << student unless @students.include?(student)
     puts 'Student created successfully!'
   end
-# ========= create teacher ==========
+
+  # ========= create teacher ==========
   def create_teacher
     print 'Age: '
     age = gets.chomp.to_i
@@ -82,6 +85,7 @@ class App
     @teachers << teacher unless @teachers.include?(teacher)
     puts 'Teacher created successfully!'
   end
+
   # ========= create books ========
   def create_book
     print 'Title: '
@@ -107,7 +111,8 @@ class App
     puts 'Rental successfully created!'
     @rentals << rental unless @rentals.include?(rental)
   end
-# ========= check the name and date of rentals ========
+
+  # ========= check the name and date of rentals ========
   def list_all_rentals
     print 'ID of person:'
     person_id = gets.chomp.to_i
@@ -126,6 +131,7 @@ class App
   end
 
   # =========== show all the teachers ===========
+
   def list_all_teachers
     if @teachers.empty?
       puts 'There are no teachers in the library'
@@ -134,4 +140,3 @@ class App
     end
   end
 end
-  
