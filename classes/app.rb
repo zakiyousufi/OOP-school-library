@@ -92,16 +92,16 @@ class App
     print 'Author: '
     author = gets.chomp
     book = Book.new(title, author)
-    puts "The book \'#{title}\' by #{author} was created successfully!"
+    puts 'The book \'#{title}\' by #{author} was created successfully!'
     @books_list << book unless @books_list.include?(book)
   end
 
   # ======== create rentals ========
   def create_rental
-    puts "Select a book from the following list by number:\n"
+    puts 'Select a book from the following list by number:\n'
     list_all_books
     book_index = gets.chomp.to_i
-    puts "Select a person from the following list by number:\n"
+    puts 'Select a person from the following list by number:\n'
     list_all_people
     person_index = gets.chomp.to_i
     puts 'Enter a date: e.g 2022/09/28'
