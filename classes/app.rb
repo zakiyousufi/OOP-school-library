@@ -92,7 +92,7 @@ class App
     print 'Author: '
     author = gets.chomp
     book = Book.new(title, author)
-    puts %(The book \"#{title}\" by #{author} was created successfully!)
+    puts %(The book "#{title}" by #{author} was created successfully!)
     @books_list << book unless @books_list.include?(book)
   end
 
