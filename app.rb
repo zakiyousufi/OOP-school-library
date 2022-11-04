@@ -37,6 +37,21 @@ class App
       puts "#{i}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
       end
     end
-  end    
+  end
+        
+# ======== Create person =======
+  def create_person
+    puts 'Do you want to create a student (1) or a teacher (2)? [Input the number]:'
+    person_type = gets.chomp
+    case person_type
+    when '1'
+      create_student
+    when '2'
+      create_teacher
+    else
+      puts 'Invalid option'
+      create_person
+    end
+  end 
 end
   
