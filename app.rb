@@ -116,5 +116,14 @@ class App
     rentals.each { |rental| puts "Date: #{rental.date}, Book: '#{rental.book.title}' by #{rental.book.author}" }
   end
 
+  # =========== show all the students ==========
+  def list_all_students
+    if @students.empty?
+      puts 'There are no students in the library'
+    else
+      @students.each { |student| puts "Name: #{student.name}, ID: #{student.id}, Age: #{student.age}" }
+    end
+  end
+
 end
   
