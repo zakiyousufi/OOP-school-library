@@ -52,6 +52,22 @@ class App
       puts 'Invalid option'
       create_person
     end
-  end 
+  end
+
+  # ======== create student =======
+  def create_student
+    print 'Age: '
+    age = gets.chomp.to_i
+    print 'Name: '
+    name = gets.chomp
+    print 'Has parent permission? [Y/N] '
+    parent_permission = gets.chomp
+    parent_permission = true if parent_permission == 'y'
+    parent_permission = false if parent_permission == 'n'
+    student = Student.new(age, name, parent_permission)
+    @people << student unless @people.include?(student)
+    @students << student unless @students.include?(student)
+    puts 'Student created successfully!'
+  end
 end
   
