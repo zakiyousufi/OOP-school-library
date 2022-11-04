@@ -19,5 +19,14 @@ class App
     def run
       display_list
     end
+    
+    # ======= show list all the books =======
+    def list_all_books
+      if @books_list.empty?
+        puts 'There are no books in the library'
+      else
+        @books_list.each_with_index { |book, i| puts "#{i}) Title: '#{book.title}', Author: #{book.author}" }
+      end
+    end
 end
   
