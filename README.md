@@ -40,6 +40,11 @@ Imagine that you are the librarian of OOP University, and you need a tool to rec
 - GitHub: [@zakiyousufi](https://github.com/zakiyousufi).
 - LinkedIn: [zakiyousufi](https://www.linkedin.com/in/zakiyousufi/)
 
+👤 **PRATAP PANABAKA**
+
+- GitHub: [@PRATAP-KUMAR](https://github.com/PRATAP-KUMAR)
+- LinkedIn: [pratap-kumar-panabaka](https://www.linkedin.com/in/pratap-kumar-panabaka-755489236/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
