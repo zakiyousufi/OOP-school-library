@@ -1,33 +1,36 @@
-require './corrector'
+require_relative 'nameable'
+require_relative 'rental'
 
-class Person
-  attr_accessor :name, :age, :parent_permission, :rentals
-  attr_reader :id, :corrector
+class Person < Nameable
+  attr_reader :id, :rentals
+  attr_accessor :name, :age
 
-  def initialize(name, age, parent_permission = { parent_permission: true })
-    @id = rand(1000)
+  def initialize(age, id, name = 'Unknown', parent_permission: true)
+    super()
+    @id = id || rand(1...1000)
     @name = name
     @age = age
     @parent_permission = parent_permission
-    @corrector = Corrector.new
     @rentals = []
   end
+
+  private
 
   def of_age?
     @age >= 18
   end
 
+  public
+
   def can_use_services?
-    of_age && parent_permission[:parent_permission]
+    of_age? || @parent_permission
   end
 
-  def validate_name
-    @name = @corrector.correct_name
+  def correct_name
+    @name
   end
 
-  def add_rental(date, book)
-    Rental.new(date, book)
+  def rent_book(date, book)
+    Rental.new(date, book, self)
   end
-
-  private :of_age?
 end
