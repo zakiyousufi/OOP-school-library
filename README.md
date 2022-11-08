@@ -33,6 +33,11 @@ Imagine that you are the librarian of OOP University, and you need a tool to rec
 
 - Next, run `ruby main.rb` which will run the app in the development mode.
 
+## How to run tests
+
+- once you are in the root directory of the project, run the below command to run tests and see the results
+`rspec .`
+
 ## Authors
 
 👤 **Ahmad Zaki Yousufi**
