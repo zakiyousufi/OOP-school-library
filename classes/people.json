@@ -1,0 +1,23 @@
+[
+  {
+    "id": 113,
+    "age": 12,
+    "name": "ahmad",
+    "parent_permission": true,
+    "type": "student"
+  },
+  {
+    "id": 152,
+    "age": 23,
+    "name": "zaki",
+    "specialization": "video journalism",
+    "type": "teacher"
+  },
+  {
+    "id": 717,
+    "age": 55,
+    "name": "Teacher",
+    "specialization": "Teaching",
+    "type": "teacher"
+  }
+]
