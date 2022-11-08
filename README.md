@@ -6,7 +6,7 @@
 
 # Description the project.
 
-Imagine that you are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them. This simple app creates will allow you to: Add new students or teachers. Add new books. Save records of who borrowed a given book and when.
+> Imagine that you are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them. This simple app creates will > allow you to: Add new students or teachers. Add new books. Save records of who borrowed a given book and when.
 
 ## Built With
 
@@ -33,10 +33,13 @@ Imagine that you are the librarian of OOP University, and you need a tool to rec
 
 - Next, run `ruby main.rb` which will run the app in the development mode.
 
-## How to run tests
+## Tests
 
 - once you are in the root directory of the project, run the below command to run tests and see the results
-`rspec .`
+
+```
+rspec .
+```
 
 ## Authors
 
