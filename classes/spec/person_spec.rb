@@ -1,5 +1,5 @@
-require_relative '../classes/book'
-require_relative '../classes/person'
+require_relative '../book'
+require_relative '../person'
 
 describe Person do
   context 'With valid arguments' do

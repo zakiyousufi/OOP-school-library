@@ -1,5 +1,5 @@
-require_relative '../classes/trimmer_decorator'
-require_relative '../classes/person'
+require_relative '../trimmer_decorator'
+require_relative '../person'
 
 describe TrimmerDecorator do
   context 'With valid arguments' do

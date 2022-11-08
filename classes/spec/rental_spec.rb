@@ -1,5 +1,5 @@
-require_relative '../classes/rental'
-require_relative '../classes/person'
+require_relative '../rental'
+require_relative '../person'
 
 describe Rental do
   context 'With valid arguments' do

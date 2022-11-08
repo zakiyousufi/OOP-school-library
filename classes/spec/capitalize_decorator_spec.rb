@@ -1,5 +1,5 @@
-require_relative '../classes/capitalize_decorator'
-require_relative '../classes/person'
+require_relative '../capitalize_decorator'
+require_relative '../person'
 
 describe CapitalizeDecorator do
   context 'With valid arguments' do

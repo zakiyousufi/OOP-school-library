@@ -1,5 +1,5 @@
-require_relative '../classes/classroom'
-require_relative '../classes/student'
+require_relative '../classroom'
+require_relative '../student'
 
 describe Classroom do
   context 'With valid arguments' do
